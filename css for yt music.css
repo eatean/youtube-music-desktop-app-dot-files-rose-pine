@@ -1,0 +1,306 @@
+/*
+by https://github.com/eatean
+
+
+youtube music desktop app dot files rose pine  © 2026 by eatean is licensed under Creative Commons Attribution-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nabla&family=Shippori+Mincho+B1&family=VT323&display=swap");
+
+html:not(.style-scope) {
+  /* Rosé Pine Dawn */
+  --rp-base: hsl(32deg, 57%, 95%) !important;
+  --rp-surface: hsl(35deg, 100%, 98%) !important;
+  --rp-overlay: hsl(33deg, 43%, 91%) !important;
+  --rp-muted: hsl(257deg, 9%, 61%) !important;
+  --rp-subtle: hsl(248deg, 12%, 52%) !important;
+  --rp-text: hsl(248deg, 19%, 40%) !important;
+  --rp-love: hsl(343deg, 35%, 55%) !important;
+  --rp-gold: hsl(35deg, 81%, 56%) !important;
+  --rp-rose: hsl(3deg, 53%, 67%) !important;
+  --rp-pine: hsl(197deg, 53%, 34%) !important;
+  --rp-foam: hsl(189deg, 30%, 48%) !important;
+  --rp-iris: hsl(268deg, 21%, 57%) !important;
+  --rp-highlight-low: hsl(25deg, 35%, 93%) !important;
+  --rp-highlight-med: hsl(10deg, 9%, 86%) !important;
+  --rp-highlight-high: hsl(315deg, 4%, 80%) !important;
+
+  @media (prefers-color-scheme: dark) {
+    /* Rosé Pine */
+    --rp-base: hsl(249deg, 22%, 12%) !important;
+    --rp-surface: hsl(247deg, 23%, 15%) !important;
+    --rp-overlay: hsl(248deg, 25%, 18%) !important;
+    --rp-muted: hsl(249deg, 12%, 47%) !important;
+    --rp-subtle: hsl(248deg, 15%, 61%) !important;
+    --rp-text: hsl(245deg, 50%, 91%) !important;
+    --rp-love: hsl(343deg, 76%, 68%) !important;
+    --rp-gold: hsl(35deg, 88%, 72%) !important;
+    --rp-rose: hsl(2deg, 55%, 83%) !important;
+    --rp-pine: hsl(197deg, 49%, 38%) !important;
+    --rp-foam: hsl(189deg, 43%, 73%) !important;
+    --rp-iris: hsl(267deg, 57%, 78%) !important;
+    --rp-highlight-low: hsl(244deg, 18%, 15%) !important;
+    --rp-highlight-med: hsl(249deg, 15%, 28%) !important;
+    --rp-highlight-high: hsl(248deg, 13%, 36%) !important;
+
+    /* Rosé Pine Moon */
+    /* --rp-base: hsl(246deg, 24%, 17%); */
+    /* --rp-surface: hsl(248deg, 24%, 20%); */
+    /* --rp-overlay: hsl(248deg, 21%, 26%); */
+    /* --rp-muted: hsl(249deg, 12%, 47%); */
+    /* --rp-subtle: hsl(248deg, 15%, 61%); */
+    /* --rp-text: hsl(245deg, 50%, 91%); */
+    /* --rp-love: hsl(343deg, 76%, 68%); */
+    /* --rp-gold: hsl(35deg, 88%, 72%); */
+    /* --rp-rose: hsl(2deg, 66%, 75%); */
+    /* --rp-pine: hsl(197deg, 48%, 47%); */
+    /* --rp-foam: hsl(189deg, 43%, 73%); */
+    /* --rp-iris: hsl(267deg, 57%, 78%); */
+    /* --rp-highlight-low: hsl(245deg, 22%, 20%); */
+    /* --rp-highlight-med: hsl(247deg, 16%, 30%); */
+    /* --rp-highlight-high: hsl(249deg, 15%, 38%); */
+  }
+}
+
+body, #ytmd-title-bar-main-panel, 
+#layout, 
+#browse-page > div.background-gradient.style-scope.ytmusic-browse-response,
+#player-page > div,
+#layout > ytmusic-player-bar > div.middle-controls.style-scope.ytmusic-player-bar,
+#right-controls,
+#left-controls,
+#layout > ytmusic-nav-bar,
+#player-bar-background,
+#right-controls > yt-icon-button.toggle-player-page-button.style-scope.ytmusic-player-bar
+{
+  background: var(--rp-base) !important;
+}
+
+#action-buttons > ytmusic-play-button-renderer > div {
+  background-color: var(--rp-text);
+}
+
+yt-formatted-string, #button > yt-icon > span {
+  color: var(--rp-text) !important;
+}
+
+#primaryProgress{
+  background: var(--rp-love) !important;
+  background-image: none !important;
+}
+#buttons > yt-button-renderer > yt-button-shape > button[aria-label="New playlist"],
+#left-content, 
+#sections > ytmusic-guide-section-renderer:nth-child(1),
+ytmusic-logo,
+#header,
+button[aria-label="Previous"] svg path,
+button[aria-label="Next"] svg path,
+#action-buttons > yt-button-renderer > yt-button-shape > button,
+#history-link > yt-icon-button,
+#play-pause-button svg path,
+#nav-bar-background,
+#guide-spacer,
+#steering-chips,
+#tabsContent > tp-yt-paper-tab:nth-child(4),
+#items > ytmusic-guide-entry-renderer:nth-child(1) > tp-yt-paper-item,
+#items > ytmusic-two-row-item-renderer:nth-child(1),
+#items > ytmusic-two-row-item-renderer:nth-child(2),
+#items > ytmusic-two-row-item-renderer:nth-child(5),
+#guide-content,
+#guide-wrapper,
+#contentContainer,
+#scrim,
+#guide,
+#mini-guide-background,
+#right-content > div:nth-child(1) > div:nth-child(2), /*next*/
+#right-content > div:nth-child(1) > div:nth-child(1) /*previous*/,
+#buttons > ytmusic-chip-cloud-chip-renderer > div,
+#tabsContent > tp-yt-paper-tab:nth-child(3),
+#sliderKnob,
+#right-controls > yt-icon-button.toggle-player-page-button.style-scope.ytmusic-player-bar,
+#right-controls > div > yt-icon-button.shuffle.style-scope.ytmusic-player-bar,
+#tab-renderer > div > div,
+#song-media-window > div
+{
+    display: none !important;
+}
+
+/* play button in bottom bar */
+#play-pause-button > button[aria-label="Play"] yt-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-color: var(--rp-text) !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 7.13397C14.1667 7.51888 14.1667 8.48113 13.5 8.86603L4.5 14.0622C3.83333 14.4471 3 13.966 3 13.1962L3 2.80385C3 2.03405 3.83333 1.55292 4.5 1.93782L13.5 7.13397Z' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A") !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 7.13397C14.1667 7.51888 14.1667 8.48113 13.5 8.86603L4.5 14.0622C3.83333 14.4471 3 13.966 3 13.1962L3 2.80385C3 2.03405 3.83333 1.55292 4.5 1.93782L13.5 7.13397Z' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A") !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: contain !important;
+}
+
+/* pause button in bottom bar */
+#play-pause-button > button[aria-label="Pause"] yt-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-color: var(--rp-text) !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.5' y='2.5' width='3' height='11' rx='0.5' stroke='%23CED0D6'/%3E%3Crect x='9.5' y='2.5' width='3' height='11' rx='0.5' stroke='%23CED0D6'/%3E%3C/svg%3E%0A") !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.5' y='2.5' width='3' height='11' rx='0.5' stroke='%23CED0D6'/%3E%3Crect x='9.5' y='2.5' width='3' height='11' rx='0.5' stroke='%23CED0D6'/%3E%3C/svg%3E%0A") !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: contain !important;
+}
+
+button[aria-label="Previous"] yt-icon, #right-content > div:nth-child(1) > div:nth-child(1) {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--rp-text) !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 2.5L2 7L6.5 11.5M11.5 2.5L7 7L11.5 11.5' stroke='%23CED0D6' stroke-linecap='round'/%3E%3C/svg%3E%0A") !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 2.5L2 7L6.5 11.5M11.5 2.5L7 7L11.5 11.5' stroke='%23CED0D6' stroke-linecap='round'/%3E%3C/svg%3E%0A") !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: contain !important;
+}
+
+button[aria-label="Next"] yt-icon, #right-content > div:nth-child(1) > div:nth-child(2) {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--rp-text) !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 11.5L12 7L7.5 2.5M2.5 11.5L7 7L2.5 2.5' stroke='%23CED0D6' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 11.5L12 7L7.5 2.5M2.5 11.5L7 7L2.5 2.5' stroke='%23CED0D6' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: contain !important;
+}
+
+#history-link > yt-icon-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--rp-text) !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5 16C14.433 16 16 14.433 16 12.5C16 10.567 14.433 9 12.5 9C10.567 9 9 10.567 9 12.5C9 14.433 10.567 16 12.5 16ZM13 10.5C13 10.2239 12.7761 10 12.5 10C12.2239 10 12 10.2239 12 10.5V12.5C12 12.6326 12.0527 12.7598 12.1464 12.8536L13.5607 14.2678C13.7559 14.463 14.0725 14.463 14.2678 14.2678C14.463 14.0725 14.463 13.7559 14.2678 13.5607L13 12.2929V10.5Z' fill='%23548AF7'/%3E%3Cpath d='M8.00003 3C5.23861 3 3.00003 5.23858 3.00003 8V8.293L4.14648 7.14667C4.34175 6.95142 4.65834 6.95144 4.85359 7.14671C5.04884 7.34198 5.04882 7.65856 4.85355 7.85382L2.50004 10.2071L0.146474 7.85387C-0.0488034 7.65862 -0.0488276 7.34204 0.14642 7.14676C0.341667 6.95149 0.658249 6.95146 0.853526 7.14671L2.00003 8.29304V8C2.00003 4.68629 4.68632 2 8.00003 2C9.2067 2 10.3316 2.35673 11.2731 2.97063C11.5044 3.12145 11.5697 3.43124 11.4189 3.66255C11.268 3.89387 10.9583 3.95912 10.7269 3.8083C9.94293 3.29711 9.00694 3 8.00003 3Z' fill='%23CED0D6'/%3E%3Cpath d='M8.00009 13C6.99318 13 6.05719 12.7029 5.27318 12.1917C5.04186 12.0409 4.73207 12.1061 4.58125 12.3374C4.43043 12.5688 4.49568 12.8785 4.727 13.0294C5.66854 13.6433 6.79342 14 8.00009 14C8.08522 14 8.16993 13.9982 8.2542 13.9947C8.14265 13.6779 8.06557 13.3448 8.02746 12.9999C8.01834 13 8.00922 13 8.00009 13Z' fill='%23CED0D6'/%3E%3Cpath d='M12.7025 8.00448C12.6354 8.0015 12.5679 8 12.5 8C12.0037 8 11.5262 8.08033 11.0798 8.22871C11.0987 8.19949 11.1209 8.17182 11.1465 8.14623L13.5 5.79291L15.8536 8.14623C16.0488 8.34149 16.0489 8.65807 15.8536 8.85334C15.6782 9.02876 15.4049 9.0466 15.2095 8.90686C15.2034 8.90219 15.1972 8.89754 15.191 8.8929C15.1756 8.88076 15.1607 8.86758 15.1465 8.85337L14.0001 7.70707V8C14.0001 8.08517 13.9983 8.16992 13.9948 8.25423C13.6779 8.14267 13.3449 8.06559 13 8.02747C13.0001 8.01832 13.0001 8.00916 13.0001 8V7.70696L12.7025 8.00448Z' fill='%23CED0D6'/%3E%3C/svg%3E%0A") !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5 16C14.433 16 16 14.433 16 12.5C16 10.567 14.433 9 12.5 9C10.567 9 9 10.567 9 12.5C9 14.433 10.567 16 12.5 16ZM13 10.5C13 10.2239 12.7761 10 12.5 10C12.2239 10 12 10.2239 12 10.5V12.5C12 12.6326 12.0527 12.7598 12.1464 12.8536L13.5607 14.2678C13.7559 14.463 14.0725 14.463 14.2678 14.2678C14.463 14.0725 14.463 13.7559 14.2678 13.5607L13 12.2929V10.5Z' fill='%23548AF7'/%3E%3Cpath d='M8.00003 3C5.23861 3 3.00003 5.23858 3.00003 8V8.293L4.14648 7.14667C4.34175 6.95142 4.65834 6.95144 4.85359 7.14671C5.04884 7.34198 5.04882 7.65856 4.85355 7.85382L2.50004 10.2071L0.146474 7.85387C-0.0488034 7.65862 -0.0488276 7.34204 0.14642 7.14676C0.341667 6.95149 0.658249 6.95146 0.853526 7.14671L2.00003 8.29304V8C2.00003 4.68629 4.68632 2 8.00003 2C9.2067 2 10.3316 2.35673 11.2731 2.97063C11.5044 3.12145 11.5697 3.43124 11.4189 3.66255C11.268 3.89387 10.9583 3.95912 10.7269 3.8083C9.94293 3.29711 9.00694 3 8.00003 3Z' fill='%23CED0D6'/%3E%3Cpath d='M8.00009 13C6.99318 13 6.05719 12.7029 5.27318 12.1917C5.04186 12.0409 4.73207 12.1061 4.58125 12.3374C4.43043 12.5688 4.49568 12.8785 4.727 13.0294C5.66854 13.6433 6.79342 14 8.00009 14C8.08522 14 8.16993 13.9982 8.2542 13.9947C8.14265 13.6779 8.06557 13.3448 8.02746 12.9999C8.01834 13 8.00922 13 8.00009 13Z' fill='%23CED0D6'/%3E%3Cpath d='M12.7025 8.00448C12.6354 8.0015 12.5679 8 12.5 8C12.0037 8 11.5262 8.08033 11.0798 8.22871C11.0987 8.19949 11.1209 8.17182 11.1465 8.14623L13.5 5.79291L15.8536 8.14623C16.0488 8.34149 16.0489 8.65807 15.8536 8.85334C15.6782 9.02876 15.4049 9.0466 15.2095 8.90686C15.2034 8.90219 15.1972 8.89754 15.191 8.8929C15.1756 8.88076 15.1607 8.86758 15.1465 8.85337L14.0001 7.70707V8C14.0001 8.08517 13.9983 8.16992 13.9948 8.25423C13.6779 8.14267 13.3449 8.06559 13 8.02747C13.0001 8.01832 13.0001 8.00916 13.0001 8V7.70696L12.7025 8.00448Z' fill='%23CED0D6'/%3E%3C/svg%3E%0A") !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: contain !important;
+}
+
+#action-buttons > yt-button-renderer > yt-button-shape > button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--rp-text) !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5973 7.65471L13.6882 5.56049C14.1053 5.15406 14.1003 4.49602 13.6948 4.08627L12.0267 2.3136L12.0224 2.30932C11.6123 1.90004 10.942 1.89327 10.5331 2.31079L8.3867 4.44406M11.5973 7.65471L8.3867 4.44406M11.5973 7.65471L5.74041 13.5H2.50036L2.5 10.32L8.3867 4.44406' stroke='%23CED0D6' stroke-miterlimit='10'/%3E%3C/svg%3E%0A") !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  -webkit-mask-size: contain !important;
+  mask-image: url("data:image/svg+xml,%3C!-- Copyright 2000-2022 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. --%3E%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5973 7.65471L13.6882 5.56049C14.1053 5.15406 14.1003 4.49602 13.6948 4.08627L12.0267 2.3136L12.0224 2.30932C11.6123 1.90004 10.942 1.89327 10.5331 2.31079L8.3867 4.44406M11.5973 7.65471L8.3867 4.44406M11.5973 7.65471L5.74041 13.5H2.50036L2.5 10.32L8.3867 4.44406' stroke='%23CED0D6' stroke-miterlimit='10'/%3E%3C/svg%3E%0A") !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  mask-size: contain !important;
+  scale: 65%;
+}
+
+
+* {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+#content {
+    padding-left: 0px !important;
+    padding: 0 !important;
+    margin-left: 0px !important;
+    max-width: 100%;
+}
+#nav-bar-background {
+  border: 0;
+  left: 0;
+}
+
+#player-page > div{
+  min-width: 100dvw !important;
+  position: absolute !important;
+  left: 0 !important;
+  padding: 0 !important;
+}
+
+#player-page {
+  left: 0 !important;
+  right: auto !important;
+  transform: none !important;
+  padding: 0 !important;
+}
+
+#layout {
+  left: 0 !important;
+  right: auto !important;
+  transform: none !important;
+  padding: 0 !important;
+}
+
+#contents > ytmusic-grid-renderer,
+#content-wrapper {
+  margin: 0 !important;
+}
+
+#layout > ytmusic-nav-bar > div.center-content.style-scope.ytmusic-nav-bar {
+  max-width: 480px;
+  margin: 0;
+}
+
+#input::placeholder {
+  color: transparent;
+}
+
+#layout > ytmusic-nav-bar > div.center-content.style-scope.ytmusic-nav-bar > ytmusic-search-box > div > div.search-box.style-scope.ytmusic-search-box {
+  background-color: transparent;
+}
+
+#items {
+  margin-top: 45px;
+  margin-left: 36px;
+}
+#progressContainer {
+  height: 7px !important;
+}
+
+#main-panel, #side-panel {
+  padding: 0 !important;
+  margin: 0 !important
+
+}
+
+#main-panel {
+  flex: none !important;
+  width: 50vw !important;
+  padding-left: 16px !important;
+}
+
+#side-panel {
+  flex: 1 1 0%;
+  width: auto !important;
+  max-width: none !important;
+}
