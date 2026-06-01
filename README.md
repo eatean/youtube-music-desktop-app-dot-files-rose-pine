@@ -1,6 +1,6 @@
-<img width="2560" height="1371" alt="Screenshot 2026-05-31 225709" src="https://github.com/user-attachments/assets/07ae4754-0e62-4779-97ad-7e85c209f3b4" />
-kinda broken, if you go into the player it won't let you out, so you have to do force reload to reload the playlist
 
-aside from that its pretty much fine.
+its perfect except for it doesn't look liek a termina
 
-if you can fix it for me, tysm <3
+ill do it later
+
+<img width="2560" height="1371" alt="Screenshot 2026-06-01 065147" src="https://github.com/user-attachments/assets/9a55317f-51cb-40c9-84c8-9392fd0df220" />
