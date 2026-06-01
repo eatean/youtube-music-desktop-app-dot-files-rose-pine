@@ -73,7 +73,9 @@ body, #ytmd-title-bar-main-panel,
 #left-controls,
 #layout > ytmusic-nav-bar,
 #player-bar-background,
-#right-controls > yt-icon-button.toggle-player-page-button.style-scope.ytmusic-player-bar
+#right-controls > yt-icon-button.toggle-player-page-button.style-scope.ytmusic-player-bar,
+#player,
+#items
 {
   background: var(--rp-base) !important;
 }
@@ -121,8 +123,7 @@ button[aria-label="Next"] svg path,
 #sliderKnob,
 #right-controls > yt-icon-button.toggle-player-page-button.style-scope.ytmusic-player-bar,
 #right-controls > div > yt-icon-button.shuffle.style-scope.ytmusic-player-bar,
-#tab-renderer > div > div,
-#song-media-window > div
+#tab-renderer > div > div
 {
     display: none !important;
 }
@@ -250,7 +251,6 @@ button[aria-label="Next"] yt-icon, #right-content > div:nth-child(1) > div:nth-c
 #player-page {
   left: 0 !important;
   right: auto !important;
-  transform: none !important;
   padding: 0 !important;
 }
 
@@ -303,4 +303,9 @@ button[aria-label="Next"] yt-icon, #right-content > div:nth-child(1) > div:nth-c
   flex: 1 1 0%;
   width: auto !important;
   max-width: none !important;
+}
+
+#layout > ytmusic-player-bar {
+  height: 3vw;
+  transform: scale(calc(2.5vw / 72px));
 }
