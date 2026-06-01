@@ -123,7 +123,9 @@ button[aria-label="Next"] svg path,
 #sliderKnob,
 #right-controls > yt-icon-button.toggle-player-page-button.style-scope.ytmusic-player-bar,
 #right-controls > div > yt-icon-button.shuffle.style-scope.ytmusic-player-bar,
-#tab-renderer > div > div
+#tab-renderer > div > div,
+#contents > ytmusic-carousel-shelf-renderer[header-style="MUSIC_CAROUSEL_SHELF_BASIC_HEADER_STYLE_DISPLAY_TWO"]
+
 {
     display: none !important;
 }
